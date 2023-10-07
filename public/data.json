@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Workshops",
+      "image": "https://i.imgur.com/6hJm46V.jpg",
+      "price": 99.99,
+      "short_description": "Engage in hands-on learning experiences with expert instructors in various fields.",
+      "description": "Our workshops are immersive, hands-on learning experiences led by expert instructors in various fields. These workshops are designed to provide participants with practical knowledge and skills that they can immediately apply in their careers or personal projects.Whether you're interested in coding, graphic design, leadership, or communication skills, our workshops cover a wide range of topics. You'll have the opportunity to interact with like-minded individuals in a collaborative learning environment, making the experience both educational and enjoyable.Each workshop is carefully crafted to ensure that you leave with valuable insights and enhanced skills. Join us for our upcoming workshops to take your expertise to the next level.Price: $99.99 per workshop session.Book Now to reserve your spot and embark on a journey of skill development and growth."
+    },
+    {
+      "id": 2,
+      "name": "Training Programs",
+      "image": "https://i.imgur.com/gnf8Xjk.jpg",
+      "price": 299.99,
+      "short_description": "Comprehensive training programs tailored to enhance your knowledge and expertise.",
+      "description": "Our training programs are comprehensive and tailored to enhance your knowledge and expertise in specific fields. Whether you're a beginner looking to start a new career or an experienced professional aiming to upskill, our programs offer a structured curriculum and expert guidance to help you achieve your goals.Topics include data science, digital marketing, project management, and more. Each training program provides a blend of theoretical concepts and practical applications, ensuring that you gain a deep understanding of the subject matter.Our instructors are industry experts with years of experience, guaranteeing that you receive top-notch education. Join our training programs to unlock new career opportunities and excel in your chosen field.\n\nPrice: $299.99 per training program.Book Now to enroll in our upcoming training programs and take the first step towards a successful and rewarding career."
+    },
+    {
+      "id": 3,
+      "name": "Webinars",
+      "image": "https://i.imgur.com/9hAyC7O.jpg",
+      "price": 49.99,
+      "short_description": "Interactive online sessions covering a wide range of educational topics.",
+      "description": "Our webinars offer interactive online sessions that cover a wide range of educational topics. These sessions are led by experts in their respective fields and provide valuable insights and opportunities for interactive learning.The best part is that our webinars are cheap in price to attend! You can expand your knowledge after training. Whether you're interested in industry trends, professional development, or emerging technologies, our webinars keep you informed and inspired.Price: $49.99.Book Now to reserve your spot in our upcoming webinars and stay updated on the latest developments in your industry."
+    },
+    {
+      "id": 4,
+      "name": "Career Fairs",
+      "image": "https://i.imgur.com/uPcHuXI.jpg",
+      "price": 349.99,
+      "short_description": "Connect with leading employers and explore career opportunities.",
+      "description": "Our career fairs provide a platform for job seekers to connect with leading employers and explore career opportunities. Whether you're a recent graduate looking for your first job or an experienced professional seeking a new challenge, our career fairs offer a valuable networking and recruitment experience.Attendees can meet with representatives from top companies, submit resumes, and participate in on-the-spot interviews. We also offer workshops and seminars to help you enhance your job search and interview skills.Price: $349.99 per entry.Book Now to secure your spot at our upcoming career fairs and take the next step in your career journey."
+    },
+    {
+      "id": 5,
+      "name": "Educational Conferences",
+      "image": "https://i.imgur.com/8GYQvcD.jpg",
+      "price": 199.99,
+      "short_description": "In-depth conferences featuring expert speakers and educational sessions.",
+      "description": "Our educational conferences are in-depth events that bring together thought leaders, experts, and professionals to share knowledge and insights. These conferences cover a wide range of topics, including industry trends, research findings, and best practices.Attendees can expect in-depth presentations, panel discussions, and networking opportunities. Our lineup of speakers includes industry experts and thought leaders who are at the forefront of their fields.Join us for a rich learning experience that will broaden your horizons and provide you with valuable insights to drive your career forward.Price: $199.99 per conference ticket.Book Now to secure your spot at our upcoming educational conferences and gain access to a wealth of knowledge and networking opportunities."
+    },
+    {
+      "id": 6,
+      "name": "Educational Podcasts",
+      "image": "https://i.imgur.com/IY0juC0.jpg",
+      "price": 39.99,
+      "short_description": "Access educational content on-the-go through our informative podcasts.",
+      "description": "Our educational podcasts provide a convenient way to access educational content while you're on-the-go. Listen to experts, thought leaders, and industry professionals as they share their insights and expertise on a wide range of topics.Whether you're commuting, exercising, or simply relaxing, our podcasts offer a valuable source of knowledge. The best part is that our podcasts are completely free to access! Subscribe to our podcast series and stay informed about the latest trends, best practices, and innovations in your field.Price: $39.99. Book Now to subscribe to our educational podcasts and start your journey to continuous learning and personal growth."
+    }
+  ]
