@@ -202,6 +202,134 @@ const Home = () => {
                 </div>
             </div>
 
+            {/* upcoming events ends here  */}
+
+            {/* why choose us section starts  */}
+            <div>
+                <h1 className="text-4xl font-extrabold mt-16 mb-16 text-center">Why choose us</h1>
+                {/* Reason-1  */}
+                <div className="hero bg-base-200">
+                    <div className="hero-content flex-col lg:flex-row-reverse">
+                        <div className="w-1/2">
+                            <img
+                                src="/planning.png"
+                                className=" rounded-lg shadow-2xl" />
+                        </div>
+                        <div className="w-1/2 text-right">
+                            <h1 className="text-3xl font-bold">Event Planning</h1>
+                            <ul className="">
+                                <li>Developing event timelines and schedules</li>
+                                <li>Venue selection and negotiation</li>
+                                <li>Budge planning and management</li>
+                                <li>Event logistics</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                {/* Reason-2  */}
+                <div className="hero bg-base-200">
+                    <div className="hero-content flex-col lg:flex-row">
+                        <div className="w-1/2">
+                            <img
+                                src="/programdevelopment.png"
+                                className=" rounded-lg shadow-2xl" />
+                        </div>
+                        <div className="w-1/2">
+                            <h1 className="text-3xl font-bold">Program development</h1>
+                            <ul>
+                                <li>Speaker and trainer selection</li>
+                                <li>Educational material creation</li>
+                                <li>Workshop and seminar design</li>
+                                <li>Content development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {/* Reason-3  */}
+
+                <div className="hero bg-base-200">
+                    <div className="hero-content flex-col lg:flex-row-reverse">
+                        <div className="w-1/2">
+                            <img
+                                src="/marketing.png"
+                                className=" rounded-lg shadow-2xl" />
+                        </div>
+                        <div className="w-1/2 text-right">
+                            <h1 className="text-3xl font-bold">Marketing & Promotion</h1>
+                            <ul className="">
+                                <li>Email marketing and campaign</li>
+                                <li>Socail media marketing and advertising</li>
+                                <li>Event branding</li>
+                                <li>Logo design</li>
+                                <li>T-shirt launch</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                {/* Reason-4 */}
+
+                <div className="hero bg-base-200">
+                    <div className="hero-content flex-col lg:flex-row">
+                        <div className="w-1/2">
+                            <img
+                                src="/ticketing.png"
+                                className=" rounded-lg shadow-2xl" />
+                        </div>
+                        <div className="w-1/2">
+                            <h1 className="text-3xl font-bold">Registration & Ticketing</h1>
+                            <ul>
+                                <li>Online and offline registration</li>
+                                <li>Ticket sales and payment processing</li>
+                                <li>Attende database management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {/* Reason-5  */}
+                <div className="hero bg-base-200">
+                    <div className="hero-content flex-col lg:flex-row-reverse">
+                        <div className="w-1/2">
+                            <img
+                                src="/virtualevent.png"
+                                className=" rounded-lg shadow-2xl" />
+                        </div>
+                        <div className="w-1/2 text-right">
+                            <h1 className="text-3xl font-bold">Virtual & Hybrid Events</h1>
+                            <ul className="">
+                                <li>Online and offline event platform setup</li>
+                                <li>Audio and video equipment rental</li>
+                                <li>Live streaming and recording services</li>
+                                <li>Presentation technology setup</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                {/* Reason-6  */}
+                <div className="hero bg-base-200 mb-16">
+                    <div className="hero-content flex-col lg:flex-row">
+                        <div className="w-1/2">
+                            <img
+                                src="/activesupport.png"
+                                className=" rounded-lg shadow-2xl" />
+                        </div>
+                        <div className="w-1/2">
+                            <h1 className="text-3xl font-bold">Active support</h1>
+                            <ul>
+                                <li>Event staff and volunteers</li>
+                                <li>Technical support for presenters</li>
+                                <li>Post event surveys and feedback collection</li>
+                                <li>Troubleshooting and problem solving</li>
+                                <li>Data analysis and reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* why choose us section ends */}
         </div>
     );
 };
