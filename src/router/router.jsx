@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
+import EventDetails from "../pages/EventDetails/EventDetails";
 
 // const { createBrowserRouter } = require("react-router-dom");
 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>,
                 loader: () => fetch('/data.json')
+            },
+            {
+                path: '/eventdetails',
+                element: <EventDetails></EventDetails>
             },
             {
                 path: '/login',
