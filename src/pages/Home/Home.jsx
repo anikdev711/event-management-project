@@ -28,7 +28,9 @@ const Home = () => {
             {/* Event-1  */}
             <div className="mb-20">
                 <div className="relative flex w-full flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">
-                    <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                    <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <img
                             src="/codingbootcamp.png"
                             alt=""
@@ -87,7 +89,10 @@ const Home = () => {
             {/* Event-2  */}
             <div className="mb-20">
                 <div className="relative flex w-full flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">
-                    <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                    <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="500"
+                        data-aos-offset="0">
                         <img
                             src="/jobfair.png"
                             alt=""
@@ -146,7 +151,9 @@ const Home = () => {
             {/* Event-3  */}
             <div className="mb-20">
                 <div className="relative flex w-full flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">
-                    <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                    <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <img
                             src="/educonference.png"
                             alt=""
@@ -210,7 +217,7 @@ const Home = () => {
                 {/* Reason-1  */}
                 <div className="hero bg-base-200">
                     <div className="hero-content flex-col lg:flex-row-reverse">
-                        <div className="w-1/2">
+                        <div className="w-1/2" data-aos="fade-down-left">
                             <img
                                 src="/planning.png"
                                 className=" rounded-lg shadow-2xl" />
@@ -230,7 +237,7 @@ const Home = () => {
                 {/* Reason-2  */}
                 <div className="hero bg-base-200">
                     <div className="hero-content flex-col lg:flex-row">
-                        <div className="w-1/2">
+                        <div className="w-1/2" data-aos="fade-down-right">
                             <img
                                 src="/programdevelopment.png"
                                 className=" rounded-lg shadow-2xl" />
@@ -250,7 +257,7 @@ const Home = () => {
 
                 <div className="hero bg-base-200">
                     <div className="hero-content flex-col lg:flex-row-reverse">
-                        <div className="w-1/2">
+                        <div className="w-1/2" data-aos="fade-down-left">
                             <img
                                 src="/marketing.png"
                                 className=" rounded-lg shadow-2xl" />
@@ -273,7 +280,7 @@ const Home = () => {
 
                 <div className="hero bg-base-200">
                     <div className="hero-content flex-col lg:flex-row">
-                        <div className="w-1/2">
+                        <div className="w-1/2" data-aos="flip-left">
                             <img
                                 src="/ticketing.png"
                                 className=" rounded-lg shadow-2xl" />
@@ -291,7 +298,7 @@ const Home = () => {
                 {/* Reason-5  */}
                 <div className="hero bg-base-200">
                     <div className="hero-content flex-col lg:flex-row-reverse">
-                        <div className="w-1/2">
+                        <div className="w-1/2" data-aos="flip-right">
                             <img
                                 src="/virtualevent.png"
                                 className=" rounded-lg shadow-2xl" />
@@ -311,7 +318,7 @@ const Home = () => {
                 {/* Reason-6  */}
                 <div className="hero bg-base-200 mb-16">
                     <div className="hero-content flex-col lg:flex-row">
-                        <div className="w-1/2">
+                        <div className="w-1/2" data-aos="flip-left">
                             <img
                                 src="/activesupport.png"
                                 className=" rounded-lg shadow-2xl" />
@@ -382,7 +389,7 @@ const Home = () => {
             </div>
             {/* FAQ Section ends */}
 
-            
+
 
         </div>
     );

@@ -42,11 +42,13 @@ const Navbar = () => {
                 <div className="navbar-end">
 
                     {
-                        user ? <div className="flex gap-2 items-center">
+                        user ? <div className="flex flex-col md:flex-col lg:flex-row gap-2 items-center">
 
-                            <p>{user.email}</p>
-                            <p>{user.displayName?user.displayName:'N/A'}</p>
+                            {/* <p>{user.email}</p> */}
                             <img src={user.photoURL? user.photoURL:'N/A'} alt="" />
+                            <p>{user.displayName?user.displayName:'N/A'}</p>
+                            {/* <img src={user.photoURL} alt="" /> */}
+                            {/* <p>{user.photoURL}</p> */}
                             <button onClick={handleLogOutFromAccount}
                                 className="btn btn-ghost">Logout</button>
                         </div>

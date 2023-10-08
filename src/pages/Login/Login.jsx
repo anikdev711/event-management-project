@@ -49,7 +49,7 @@ const Login = () => {
             .catch(error => {
                 console.log(error);
                 setEventLogInError(error.message);
-                // swal("Try again", "Login failed", "error");
+                swal("Login failed", "Wrong email or password", "error");
             })
 
 

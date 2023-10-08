@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import swal from 'sweetalert';
+import { updateProfile } from "firebase/auth";
 
 
 
@@ -18,7 +19,8 @@ const Register = () => {
         const name = eventForm.get('name');
         const email = eventForm.get('email');
         const password = eventForm.get('password');
-        console.log(name, email, password);
+        const photoURL = eventForm.get('photoURL')
+        console.log(name, email, password, photoURL);
 
         if (password.length < 6) {
             // console.log('password should not be less than 6 characters');
@@ -37,6 +39,21 @@ const Register = () => {
             signUpUsingEmailPassword(email, password)
                 .then((result) => {
                     console.log(result.user);
+
+                    //update profile
+
+                    updateProfile(result.user, {
+                        displayName: name,
+                        photoURL: photoURL
+                    })
+                        .then(() => {
+                            console.log('profile updated');
+                        })
+                        .catch((error) => {
+                            console.log(error.message);
+                        })
+
+                    // window.location.reload();
                     swal("Good job!", "Registration successful", "success");
 
                 })
@@ -52,7 +69,7 @@ const Register = () => {
     return (
         <div>
             <h1 className="text-4xl font-extrabold text-center mt-8">Register Now</h1>
-            
+
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -68,6 +85,18 @@ const Register = () => {
                                     placeholder="Name"
                                     className="input input-bordered" required />
                             </div>
+
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Photo URL</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    name="photoURL"
+                                    placeholder="photo URL"
+                                    className="input input-bordered" />
+                            </div>
+
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -89,7 +118,7 @@ const Register = () => {
                                     className="input input-bordered" required />
                             </div>
                             <div>
-                                {eventRegisterError && <p>{eventRegisterError}</p> }
+                                {eventRegisterError && <p>{eventRegisterError}</p>}
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary text-white font-bold">Register</button>
