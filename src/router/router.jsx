@@ -8,6 +8,7 @@ import Register from "../pages/Register/Register";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import EventDetails from "../pages/EventDetails/EventDetails";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import PrivateRoute from "./PrivateRoute";
 
 // const { createBrowserRouter } = require("react-router-dom");
 
@@ -25,11 +26,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/eventdetails',
-                element: <EventDetails></EventDetails>
+                element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>
             },
             {
                 path: '/contactus',
-                element: <ContactUs></ContactUs>
+                element: <PrivateRoute><ContactUs></ContactUs></PrivateRoute>
             },
             {
                 path: '/login',
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/service/:id',
-                element: <ServiceDetails></ServiceDetails>,
+                element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
                 loader: () => fetch('/data.json')
             }
         ]

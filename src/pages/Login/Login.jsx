@@ -1,21 +1,33 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+import swal from 'sweetalert';
 
 
 
 const Login = () => {
 
     const { googleSignIn, signInUsingEmailPassword } = useContext(AuthContext);
+    const [eventLogInError, setEventLogInError] = useState('');
+    const location = useLocation();
+    // const navigate = useNavigation();
+    const navigate = useNavigate();
+    const from = location.state?.from || '/'
 
     const handleGoogleSignIn = (e) => {
         e.preventDefault();
         googleSignIn()
             .then(result => {
                 console.log(result.user);
+                navigate(from, { replace: true });
+                swal("Good job!", "Login successful", "success");
+
             })
             .catch(error => {
                 console.log(error);
+                swal("Try again", "Login failed", "error");
             })
     }
 
@@ -26,13 +38,21 @@ const Login = () => {
         const password = eventLoginForm.get('password');
         console.log(email, password);
 
+
         signInUsingEmailPassword(email, password)
             .then(result => {
                 console.log(result.user);
+                navigate(from, { replace: true });
+                swal("Good job!", "Login successful", "success");
+
             })
             .catch(error => {
                 console.log(error);
+                setEventLogInError(error.message);
+                // swal("Try again", "Login failed", "error");
             })
+
+
     }
 
     return (
@@ -67,6 +87,9 @@ const Login = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
+                            <div>
+                                {eventLogInError && <p>{eventLogInError}</p> }
+                            </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary text-white font-bold">Login</button>
                             </div>
@@ -80,6 +103,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            {/* <ToastContainer /> */}
         </div>
     );
 };
