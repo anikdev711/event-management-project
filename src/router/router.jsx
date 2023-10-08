@@ -7,6 +7,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import EventDetails from "../pages/EventDetails/EventDetails";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 // const { createBrowserRouter } = require("react-router-dom");
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: '/eventdetails',
                 element: <EventDetails></EventDetails>
+            },
+            {
+                path: '/contactus',
+                element: <ContactUs></ContactUs>
             },
             {
                 path: '/login',

@@ -206,7 +206,7 @@ const Home = () => {
 
             {/* why choose us section starts  */}
             <div>
-                <h1 className="text-4xl font-extrabold mt-16 mb-16 text-center">Why choose us</h1>
+                <h1 className="text-4xl font-extrabold mt-16 mb-16 text-center">Why Choose Us</h1>
                 {/* Reason-1  */}
                 <div className="hero bg-base-200">
                     <div className="hero-content flex-col lg:flex-row-reverse">
@@ -330,6 +330,58 @@ const Home = () => {
                 </div>
             </div>
             {/* why choose us section ends */}
+
+            {/* FAQ Section starts  */}
+            <div className="lg:max-w-5xl mx-auto">
+                <h1 className="text-4xl text-center font-extrabold mb-16 mt-16">FAQ</h1>
+                <div className="collapse collapse-arrow bg-base-200 mb-5">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div className="collapse-title text-xl font-medium">
+                        What types of events can you manage?
+                    </div>
+                    <div className="collapse-content">
+                        <p>Educational and training events like workshops, webinars, career fairs, training bootcamp, conferences</p>
+                    </div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-200 mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title text-xl font-medium">
+                        Can you handle both in-person and virtual events?
+                    </div>
+                    <div className="collapse-content">
+                        <p>Yes. We can make plans and work according to your specific needs whether it is in-person, virtual and hybrid events</p>
+                    </div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-200 mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title text-xl font-medium">
+                        How do you handle event regestration and ticketing?
+                    </div>
+                    <div className="collapse-content">
+                        <p>We provide online regestration and ticketing. We have managed attende list on the event day.</p>
+                    </div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-200 mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title text-xl font-medium">
+                        Do you provide post event evaluations?
+                    </div>
+                    <div className="collapse-content">
+                        <p>Yes, we collect feedback from the attende on the event</p>
+                    </div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-200 mb-5">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title text-xl font-medium">
+                        Can you provide well known speakers and presenters?
+                    </div>
+                    <div className="collapse-content">
+                        <p>Yes, according to your need we invite qualified speakers and presenters. We can also handle their safe travel arrangements and ensure qualityful resources</p>
+                    </div>
+                </div>
+            </div>
+            {/* FAQ Section ends */}
+
         </div>
     );
 };
