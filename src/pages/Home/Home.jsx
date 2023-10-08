@@ -382,6 +382,8 @@ const Home = () => {
             </div>
             {/* FAQ Section ends */}
 
+            
+
         </div>
     );
 };
