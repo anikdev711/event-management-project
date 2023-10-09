@@ -14,7 +14,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <h1 className="text-4xl font-extrabold text-center mt-16 mb-16">Our Services</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:max-w-6xl mx-auto">
 
                 {
                     servicesDataAvailable.map(services => <ServicesCard key={services.id} services={services}></ServicesCard>)
@@ -26,8 +26,8 @@ const Home = () => {
             {/* upcoming events starts here  */}
 
             {/* Event-1  */}
-            <div className="mb-20">
-                <div className="relative flex w-full flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">
+            <div className="mb-20 lg:max-w-6xl mx-auto">
+                <div className="relative flex w-full flex-col md:flex-col lg:flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">
                     <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700" data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
@@ -87,8 +87,8 @@ const Home = () => {
             </div>
 
             {/* Event-2  */}
-            <div className="mb-20">
-                <div className="relative flex w-full flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">
+            <div className="mb-20 lg:max-w-6xl mx-auto">
+                <div className="relative flex w-full flex-col md:flex-col lg:flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">
                     <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700" data-aos="fade-zoom-in"
                         data-aos-easing="ease-in-back"
                         data-aos-delay="500"
@@ -149,8 +149,8 @@ const Home = () => {
             </div>
 
             {/* Event-3  */}
-            <div className="mb-20">
-                <div className="relative flex w-full flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">
+            <div className="mb-20 lg:max-w-6xl mx-auto">
+                <div className="relative flex w-full flex-col md:flex-col lg:flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-xl">
                     <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700" data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000">
@@ -212,7 +212,7 @@ const Home = () => {
             {/* upcoming events ends here  */}
 
             {/* why choose us section starts  */}
-            <div>
+            <div className="lg:max-w-6xl mx-auto">
                 <h1 className="text-4xl font-extrabold mt-16 mb-16 text-center">Why Choose Us</h1>
                 {/* Reason-1  */}
                 <div className="hero bg-base-200">
